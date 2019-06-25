@@ -1,0 +1,30 @@
+<script>
+let id = Number(prompt("wat is id", ''));
+let type = prompt("wat is het type van het racket", '');
+let power = Number(prompt("Wat is de kracht van het racket", ''));
+
+class Rocket {
+  // let type = prompt("wat is het type van het racket", '');
+  // let power = prompt("Wat is de kracht van het racket", '');
+
+  constructor(id, type, power) {
+    this.id = id;
+    this.type = type;
+    this.power = power;
+  }
+}
+
+// let rockets = [new Rocket(3, "moon", 35000.00), new Rocket(4, "pluto", 40.80), new Rocket(5, "piet", 50.89)];
+// let rocket = new Rocket(3, "moon", 35000.00);
+let rocket = new Rocket(id, type, power);
+let rocketCollection = [];
+
+rocketCollection.push(rocket);
+
+for (let rocket of rocketCollection) {
+    console.log(rocket.type);
+    console.log(rocket.power);
+    console.log(typeof(rocket.type));
+    console.log(typeof(rocket.power));
+}
+</script>
